@@ -10,7 +10,9 @@
 
 /* #region Common */
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -283,19 +285,26 @@ img {
 /* #region Main */
 
 #hero {
-  padding: 160px 0;
+  padding: 255px 0 160px;
   text-align: center;
   background-image: url('./../img/jumbo.png');
   background-size: cover;
   background-position: center;
 }
 
+#hero > .container {
+  width: 40%;
+}
+
 #hero > .container > h1 {
   margin-bottom: 50px;
+  color: var(--white);
+  font-size: 3.25rem;
 }
 
 #hero > .container > p {
   margin-bottom: 40px;
+  color: var(--white);
 }
 
 #hero > .container > .flex {
@@ -303,12 +312,26 @@ img {
   align-items: center;
 }
 
+#hero > .container > .flex > button {
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: var(--fw-600);
+}
+
 #download {
   margin-right: 20px;
 }
 
+#download::before {
+  content: '\2b07';
+  margin-right: 5px;
+}
+
 #open_browser {
   margin-left: 20px;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 #app_main > section:not(#app_main > #hero) {
