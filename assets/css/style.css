@@ -4,6 +4,8 @@
   --blue: #3161e0;
   --grey: #f6f6f6;
   --violet-blue: #8ea1e1;
+
+  --fw-600: 600;
 }
 
 /* #region Common */
@@ -21,6 +23,16 @@ body {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
 }
 
 /* #endregion Common */
@@ -236,6 +248,10 @@ ul {
 
 #app_header {
   padding: 30px 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
 }
 
 #nav_bar {
@@ -246,6 +262,20 @@ ul {
 #menu > ul {
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  font-weight: var(--fw-600);
+}
+
+#menu > ul > li:nth-child(even) {
+  margin: 0 50px;
+}
+
+#nav_bar > button {
+  background-color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  font-weight: var(--fw-600);
 }
 
 /* #endregion Header */
@@ -255,6 +285,9 @@ ul {
 #hero {
   padding: 160px 0;
   text-align: center;
+  background-image: url('./../img/jumbo.png');
+  background-size: cover;
+  background-position: center;
 }
 
 #hero > .container > h1 {
