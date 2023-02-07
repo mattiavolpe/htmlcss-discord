@@ -39,6 +39,11 @@ img {
   vertical-align: middle;
 }
 
+svg {
+  color: var(--grey);
+  vertical-align: middle;
+}
+
 /* #endregion Common */
 
 /* #region Utility */
@@ -51,6 +56,10 @@ img {
   width: 96%;
   max-width: 1140px;
   margin: auto;
+}
+
+.flipped_svg {
+  transform: rotate(180deg);
 }
 
 /* #endregion Utility */
