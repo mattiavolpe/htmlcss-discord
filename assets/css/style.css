@@ -281,6 +281,7 @@ button {
   font-weight: var(--fw-600);
 }
 
+/* USED IN THE PLACE OF GAP FOR BETTER BROWSER COMPATIBILITY */
 #menu > ul > li:nth-child(even) {
   margin: 0 50px;
 }
