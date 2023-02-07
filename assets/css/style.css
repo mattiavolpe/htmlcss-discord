@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Albert Sans', sans-serif;
+  font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: var(--black);
 }
 
@@ -323,8 +323,7 @@ img {
   margin-right: 20px;
 }
 
-#download::before {
-  content: '\2b07';
+#download > i {
   margin-right: 5px;
 }
 
