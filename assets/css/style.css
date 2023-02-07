@@ -341,7 +341,8 @@ button {
   margin-right: 20px;
 }
 
-#download > i {
+#download > i,
+#stay_connected > .container > button > i {
   margin-right: 5px;
 }
 
