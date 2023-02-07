@@ -313,7 +313,8 @@ img {
   align-items: center;
 }
 
-#hero > .container > .flex > button {
+#hero > .container > .flex > button,
+#stay_connected > .container > button {
   font-size: 1.15rem;
   padding: 15px 25px;
   border-radius: 30px;
@@ -336,7 +337,7 @@ img {
 }
 
 #app_main > section:not(#app_main > #hero) {
-  padding: 180px 0;
+  padding: 120px 0;
 }
 
 #meet,
@@ -375,14 +376,20 @@ img {
 }
 
 #stay_connected > .container > div {
-  margin: 110px 0;
+  margin: 30px 0 0;
 }
 
 #stay_connected > .container > h3 {
-  margin-bottom: 50px;
+  width: 40%;
+  margin: auto;
+  padding: 50px 0;
+  background-image: url(./../img/stars.svg);
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 #stay_connected > .container > button {
+  color: var(--white);
   background-color: var(--violet-blue);
 }
 
