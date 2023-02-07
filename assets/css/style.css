@@ -1,0 +1,384 @@
+:root {
+  --white: #ffffff;
+  --black: #23272a;
+  --blue: #3161e0;
+  --grey: #f6f6f6;
+  --violet-blue: #8ea1e1;
+}
+
+/* #region Common */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Albert Sans', sans-serif;
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+}
+
+/* #endregion Common */
+
+/* #region Utility */
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 96%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* #endregion Utility */
+
+/* #region Debug */
+
+.debug #app_header {
+  background-color: #3161e0;
+}
+
+.debug #nav_bar {
+  height: 40px;
+  background-color: orange;
+}
+
+.debug #nav_bar > div:first-of-type {
+  width: 150px;
+  height: 100%;
+  border: 1px dotted black;
+  background-color: red;
+}
+
+.debug #menu {
+  width: 600px; 
+  height: 100%;
+  border: 1px dotted black;
+}
+
+.debug #menu > ul {
+  height: 100%;
+}
+
+.debug #menu > ul > li {
+  width: 10%;
+  height: 100%;
+  border: 1px dotted black;
+  background-color: green;
+}
+
+.debug #nav_bar > button {
+  width: 80px;
+  height: 100%;
+  border: 1px dotted black;
+  background-color: transparent;
+  background-color: blue;
+}
+
+.debug #hero {
+  background-color: orange;
+}
+
+.debug #hero > .container > h1 {
+  height: 70px;
+  border: 1px dotted black;
+  background-color: red;
+}
+
+.debug #hero > .container > p {
+  height: 100px;
+  border: 1px dotted black;
+  background-color: green;
+}
+
+.debug #hero > .container > div {
+  height: 70px;
+}
+
+.debug #hero > .container > div > * {
+  background-color: transparent;
+  width: 350px;
+  height: 100%;
+  border: 1px dotted black;
+  background-color: blue;
+}
+
+.debug #app_main > section > .container:not(#stay_connected > .container, #hero > .container) {
+  height: 550px;
+  background-color: orange;
+}
+
+.debug #app_main > section > .flex > .section_text {
+  width: calc(100% / 3);
+  height: 100%;
+  background-color: red;
+  border: 1px dotted black;
+}
+
+.debug #app_main > section > .flex > .section_image {
+  width: calc((100% / 3) * 2);
+  height: 100%;
+  background-color: green;
+  border: 1px dotted black;
+}
+
+.debug #stay_connected > .container > h2 {
+  height: 50px;
+  background-color: red;
+  border: 1px dotted black;
+}
+
+.debug #stay_connected > .container > p {
+  height: 60px;
+  background-color: green;
+  border: 1px dotted black;
+}
+
+.debug #stay_connected > .container > div {
+  height: 680px;
+  background-color: blue;
+  border: 1px dotted black;
+}
+
+.debug #stay_connected > .container > h3 {
+  height: 90px;
+  background-color: cyan;
+  border: 1px dotted black;
+}
+
+.debug #stay_connected > .container > button {
+  height: 70px;
+  width: 280px;
+  border: 1px dotted black;
+}
+
+.debug #footer_menu {
+  background-color: orange;
+}
+
+.debug #footer_menu > div:first-child {
+  width: calc(100% - (17% * 4));
+}
+
+.debug #footer_menu > div:first-child > h3{
+  height: 90px;
+  background-color: red;
+  border: 1px dotted white;
+}
+
+.debug #language {
+  height: 20px;
+  margin: 30px 0;
+}
+
+.debug #language > img {
+  height: 100%;
+  width: 30px;
+}
+
+.debug #language > * {
+  background-color: green;
+  border: 1px dotted white;
+}
+
+.debug #socials > div {
+  background-color: blue;
+  border: 1px dotted white;
+}
+
+.debug #product > h4,
+.debug #campaign > h4,
+.debug #resources > h4,
+.debug #norms > h4 {
+  height: 20px;
+  background-color: #8ea1e1;
+  border: 1px dotted white;
+}
+
+.debug #product > ul > li,
+.debug #campaign > ul > li,
+.debug #resources > ul > li,
+.debug #norms > ul > li {
+  height: 20px;
+  background-color: white;
+  border: 1px dotted white;
+}
+
+.debug #bottom_section {
+  height: 40px;
+  background-color: orange;
+}
+
+.debug #bottom_section > * {
+  height: 100%;
+  background-color: red;
+  border: 1px dotted white;
+}
+
+.debug #bottom_section > div {
+  width: 150px;
+}
+
+.debug #bottom_section > button {
+  width: 100px;
+}
+
+/* #endregion Debug */
+
+/* #region Header */
+
+#app_header {
+  padding: 30px 0;
+}
+
+#nav_bar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu > ul {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #endregion Header */
+
+/* #region Main */
+
+#hero {
+  padding: 160px 0;
+  text-align: center;
+}
+
+#hero > .container > h1 {
+  margin-bottom: 50px;
+}
+
+#hero > .container > p {
+  margin-bottom: 40px;
+}
+
+#hero > .container > .flex {
+  justify-content: center;
+  align-items: center;
+}
+
+#download {
+  margin-right: 20px;
+}
+
+#open_browser {
+  margin-left: 20px;
+}
+
+#app_main > section:not(#app_main > #hero) {
+  padding: 180px 0;
+}
+
+#meet,
+#stay_connected {
+  background-color: #f6f6f6;
+}
+
+#app_main > section > .flex {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#stay_connected > .container {
+  text-align: center;
+}
+
+#stay_connected > .container > h2 {
+  margin-bottom: 40px;
+}
+
+#stay_connected > .container > div {
+  margin: 110px 0;
+}
+
+#stay_connected > .container > h3 {
+  margin-bottom: 50px;
+}
+
+#stay_connected > .container > button {
+  background-color: #8ea1e1;
+}
+
+/* #endregion Main */
+
+/* #region Footer */
+
+#app_footer {
+  background-color: #23272a;
+  padding: 100px 0;
+}
+
+#footer_menu {
+  align-items: flex-start;
+}
+
+#footer_menu > div {
+  padding-right: 20px;
+}
+
+#product,
+#campaign,
+#resources,
+#norms {
+  width: 17%;
+}
+
+#language,
+#socials {
+  align-items: center;
+}
+
+#language > img {
+  margin-right: 5px;
+}
+
+#language_selection {
+  border: none;
+  background-color: transparent;
+}
+
+#socials > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+#product *,
+#campaign *,
+#resources *,
+#norms * {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+#product *:last-child,
+#campaign *:last-child,
+#resources *:last-child,
+#norms *:last-child {
+  margin-bottom: 0;
+}
+
+#app_footer hr {
+  margin: 40px 0;
+  border: 1px solid #8ea1e1
+}
+
+#bottom_section {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #endregion Footer */
