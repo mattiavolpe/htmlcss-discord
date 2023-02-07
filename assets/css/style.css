@@ -6,6 +6,7 @@
   --violet-blue: #8ea1e1;
 
   --fw-600: 600;
+  --fw-900: 900;
 }
 
 /* #region Common */
@@ -19,7 +20,7 @@
 }
 
 body {
-  font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   color: var(--black);
 }
 
@@ -130,14 +131,12 @@ img {
 }
 
 .debug #app_main > section > .flex > .section_text {
-  width: calc(100% / 3);
   height: 100%;
   background-color: red;
   border: 1px dotted black;
 }
 
 .debug #app_main > section > .flex > .section_image {
-  width: calc((100% / 3) * 2);
   height: 100%;
   background-color: green;
   border: 1px dotted black;
@@ -273,7 +272,7 @@ img {
 }
 
 #nav_bar > button {
-  background-color: white;
+  background-color: var(--white);
   padding: 10px 15px;
   border: none;
   border-radius: 20px;
@@ -303,8 +302,10 @@ img {
 }
 
 #hero > .container > p {
+  font-size: 1.125rem;
   margin-bottom: 40px;
   color: var(--white);
+  font-weight: var(--fw-600);
 }
 
 #hero > .container > .flex {
@@ -313,6 +314,7 @@ img {
 }
 
 #hero > .container > .flex > button {
+  font-size: 1.15rem;
   padding: 15px 25px;
   border-radius: 30px;
   border: none;
@@ -339,7 +341,7 @@ img {
 
 #meet,
 #stay_connected {
-  background-color: #f6f6f6;
+  background-color: var(--grey);
 }
 
 #app_main > section > .flex {
@@ -351,8 +353,25 @@ img {
   text-align: center;
 }
 
+#app_main > section > .flex > .section_text {
+  width: calc(100% / 3);
+}
+
+#app_main > section > .flex > .section_image {
+  width: calc((100% / 3) * 2);
+}
+
+#app_main > section > .flex > .section_text > h2,
 #stay_connected > .container > h2 {
+  font-size: 3rem;
+  font-weight: var(--fw-900);
   margin-bottom: 40px;
+}
+
+#app_main > section > .flex > .section_text > p,
+#stay_connected > .container > p {
+  font-size: 1.125rem;
+  font-weight: var(--fw-600);
 }
 
 #stay_connected > .container > div {
@@ -364,7 +383,7 @@ img {
 }
 
 #stay_connected > .container > button {
-  background-color: #8ea1e1;
+  background-color: var(--violet-blue);
 }
 
 /* #endregion Main */
@@ -372,7 +391,7 @@ img {
 /* #region Footer */
 
 #app_footer {
-  background-color: #23272a;
+  background-color: var(--black);
   padding: 100px 0;
 }
 
@@ -428,7 +447,7 @@ img {
 
 #app_footer hr {
   margin: 40px 0;
-  border: 1px solid #8ea1e1
+  border: 1px solid var(--violet-blue)
 }
 
 #bottom_section {
